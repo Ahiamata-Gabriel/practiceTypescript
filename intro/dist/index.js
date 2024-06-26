@@ -1,3 +1,3 @@
 "use strict";
-let age = 10;
+let empl = { id: 1, name: "Mogul" };
 //# sourceMappingURL=index.js.map
