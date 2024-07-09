@@ -1,9 +1,6 @@
 "use strict";
-function greet(name) {
-    if (name)
-        console.log(name.toLocaleLowerCase);
-    else
-        console.log("hola");
-}
-greet(null);
+let speed = null;
+let ride = {
+    speed: speed !== null && speed !== void 0 ? speed : 30,
+};
 //# sourceMappingURL=index.js.map
