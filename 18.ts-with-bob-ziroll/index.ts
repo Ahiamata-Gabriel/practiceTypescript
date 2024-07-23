@@ -32,6 +32,17 @@ function addNewPizza(pizzaObj: Omit<Pizza, "id">): Pizza {
   return newPizza;
 }
 
+function addToArray<T>(array: T[], item: T): T[] {
+  array.push(item);
+  return array;
+}
+
+addToArray<Pizza>(menu, {
+  id: nextPizzaId++,
+  name: "Chicken Beacon Ranch",
+  price: 12,
+});
+
 function placeOrder(pizzaName: string): Order | undefined {
   const selectedPizza = menu.find((pizzaObj) => pizzaObj.name === pizzaName);
   if (!selectedPizza) {
